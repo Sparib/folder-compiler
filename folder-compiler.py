@@ -19,8 +19,6 @@ def main():
         for name in files:
             file_structure.append(os.path.join(root, name).replace("\\", "/"))
 
-    print(file_structure)
-
     for src in file_structure:
         # Set up target directory for copying
         tgt = src.split("/"); tgt[1] = "compiled-folder"; tgt = "/".join(tgt)
